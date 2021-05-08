@@ -41,7 +41,9 @@ signinForm.addEventListener("submit", (e) => {
   const email = document.querySelector("#login-email").value;
   const password = document.querySelector("#login-password").value;
 
-  auth.signInWithEmailAndPassword(email, password).then((userCredential) => {
+  auth
+    .signInWithEmailAndPassword(email, password)
+    .then((userCredential) => {
     // Clear form
     signinForm.reset();
 
